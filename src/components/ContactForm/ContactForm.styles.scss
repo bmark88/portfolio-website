@@ -1,0 +1,17 @@
+.contact-container {
+  background-color: rgb(43, 51, 128);
+  width: 33.33vw;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  padding: 20px;
+  
+  h2 {
+    color: white;
+  }
+
+  input, textarea, label, button {
+    color: #C8C8C8;
+  }
+
+}
