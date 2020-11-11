@@ -2,7 +2,6 @@
 
   div {
     display: flex;
-    border: solid 1px;
     justify-content: space-around;
     padding: 20px;
       
@@ -26,9 +25,29 @@
 
   .right {
     flex-direction: row;
+
+    &:hover {
+      border-left: solid 15px red;
+    }
   }
 
   .left {
     flex-direction: row-reverse;
+
+    &:hover {
+      border-left: solid 15px red;
+    }
   }
+
+}
+
+.project-information-container {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+}
+
+.project-item {
+  border: solid 1px;
+  margin-bottom: 50px;
 }
