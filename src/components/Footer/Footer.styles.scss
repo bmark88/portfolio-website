@@ -1,5 +1,10 @@
 footer {
-  height: 15vh;
+  height: 100%;
   display: flex;
-  flex-direction: column;
+}
+
+.copyright {
+  color: white;
+  position: absolute;
+  margin: 285px 0 0 42vw;
 }

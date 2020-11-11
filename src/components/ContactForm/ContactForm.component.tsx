@@ -21,7 +21,7 @@ const ContactForm = (props: any) => (
       <TextField label='Your Name' required />
       <TextField label='Your Phone Number' required />
       <TextField label='Your Email' required />
-      <TextField multiline={true} variant='outlined' rows={5} label='Additional Information' style={styles.additionalInfo} />
+      <TextField multiline={true} variant='outlined' rows={5} label='Message' style={styles.additionalInfo} />
       <Button style={styles.formButton}>Submit Contact Information</Button>
     </FormControl>
   </div>
