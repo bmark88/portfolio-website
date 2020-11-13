@@ -1,10 +1,8 @@
-footer {
-  height: 100%;
+.footer-content {
   display: flex;
 }
 
 .copyright {
-  color: white;
-  position: absolute;
-  margin: 285px 0 0 42vw;
+  position: relative;
+  margin: 0 auto;
 }

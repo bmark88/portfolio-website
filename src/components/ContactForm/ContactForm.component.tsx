@@ -15,8 +15,8 @@ const styles = {
 };
 
 const ContactForm = (props: any) => (
-  <div className='contact-container' >
-    <h2>{props.title}</h2>
+  <div className='contact-form'>
+    <h2>Contact Me</h2>
     <FormControl>
       <TextField label='Your Name' required />
       <TextField label='Your Phone Number' required />

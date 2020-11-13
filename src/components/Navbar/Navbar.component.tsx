@@ -6,9 +6,9 @@ import './Navbar.styles.scss';
 
 const Navbar = () => (
   <nav className='nav-container'>
-    <NavbarListItem route='/projects' pageName='Projects' />
-    <NavbarListItem route='/about' pageName='About' />
-    <NavbarListItem route='/contact' pageName='Contact' />
+    <NavbarListItem href='projects' pageName='Projects' />
+    <NavbarListItem href='about' pageName='About' />
+    <NavbarListItem href='contact' pageName='Contact' />
   </nav>
 );
 

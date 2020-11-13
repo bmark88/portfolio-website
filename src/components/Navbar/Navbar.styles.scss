@@ -1,6 +1,10 @@
 nav {
-  height: 5vh;
-  background-color: rgb(20, 10, 78)
+  padding: 1em;
+  min-height: 56px;
+  background-color: rgb(20, 10, 78);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .nav-container {

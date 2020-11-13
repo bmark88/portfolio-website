@@ -11,12 +11,14 @@ const Footer = () => {
   return (
   <>
     <footer>
-      <SocialContainer />
-      <ContactForm title='Contact Me' />
-    </footer>
+      <div className='footer-content'>
+        <SocialContainer />
+        <ContactForm />
+      </div>
       <p className='copyright'>
         Copyright &#169; {currentDate.getFullYear()} Bradley Mark - All rights reserved.
       </p>
+    </footer>
   </>
 )};
 

@@ -1,16 +1,16 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 import './NavbarListItem.styles.scss';
 
 const NavbarListItem = (props: any) => {
-  const { route, pageName } = props;
+  const { href, pageName } = props;
 
   return (
     <div>
-      <Link to={route} className='navbar-list-item'>
+      <a href={`#${href}`} className='navbar-list-item'>
         {pageName}
-      </Link>
+      </a>
     </div>
   );
 };
