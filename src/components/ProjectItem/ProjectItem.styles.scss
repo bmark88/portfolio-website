@@ -1,45 +1,48 @@
-.project-container {
-
-  .project-item {
-    width: 100%;
-    display: flex;
-    padding: 2em;
-    border: solid 1px;
-    margin-bottom: 50px;
-      
-    a {
-      text-decoration: none;
-      color: black;
-      font-size: 50px;
-
-      &:hover {
-        color: darkgrey;
-      }
-    }
-
-    img {
-      height: auto; 
-      width: 66.66%; 
-      padding-left: 2em;
-    } 
-  }
-
-  .display-right {
-    flex-direction: row;
+.project-item {
+  width: 100%;
+  display: flex;
+  padding: 2em;
+  border: solid 1px;
+  margin-bottom: 50px;
+    
+  a {
+    text-decoration: none;
+    color: black;
+    // font-size: 50px;
 
     &:hover {
-      border-left: solid 15px red;
+      color: darkgrey;
     }
   }
 
-  .display-left {
-    flex-direction: row-reverse;
+  img {
+    height: auto; 
+    width: 66.66%; 
+    padding-left: 2em;
+  } 
+}
 
-    &:hover {
-      border-left: solid 15px red;
-    }
+.display-right {
+  flex-direction: row;
+
+  // &:hover {
+  //   border-left: solid 15px #140a4e;
+  // }
+}
+
+.display-left {
+  flex-direction: row-reverse;
+
+  // &:hover {
+  //   border-left: solid 15px #140a4e;
+  // }
+}
+
+.display-left, .display-right {
+  
+  &:hover {
+    border-left: solid 15px goldenrod;
   }
-
 }
 
 .project-information-container {

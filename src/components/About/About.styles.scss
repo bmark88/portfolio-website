@@ -1,0 +1,25 @@
+#profile-pic {
+  width: 30vw;
+  border-radius: 20px;
+}
+
+.philosophies {
+
+  span {
+    color: #DAA520;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  li {
+    padding: 0.5rem;
+    list-style: none;
+    font-size: 1.2rem;
+  }
+
+  .possible {
+    color: red;
+  }
+
+}

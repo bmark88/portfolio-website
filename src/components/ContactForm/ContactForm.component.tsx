@@ -14,17 +14,19 @@ const styles = {
   }
 };
 
-const ContactForm = (props: any) => (
-  <div className='contact-form'>
-    <h2>Contact Me</h2>
-    <FormControl>
-      <TextField label='Your Name' required />
-      <TextField label='Your Phone Number' required />
-      <TextField label='Your Email' required />
-      <TextField multiline={true} variant='outlined' rows={5} label='Message' style={styles.additionalInfo} />
-      <Button style={styles.formButton}>Submit Contact Information</Button>
-    </FormControl>
-  </div>
+const ContactForm = () => (
+  <section id='contact'>
+    <div className='contact-form'>
+      <h3>Contact Me</h3>
+      <FormControl>
+        <TextField label='Your Name' required />
+        <TextField label='Your Phone Number' required />
+        <TextField label='Your Email' required />
+        <TextField multiline={true} variant='outlined' rows={5} label='Message' style={styles.additionalInfo} />
+        <Button style={styles.formButton}>Submit Contact Information</Button>
+      </FormControl>
+    </div>
+  </section>
 );
 
 export default ContactForm;
