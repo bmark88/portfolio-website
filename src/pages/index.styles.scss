@@ -9,6 +9,10 @@ body, p, h2 {
 
 h2 {
   font-size: 5rem;
+
+  @media (max-width: 1170px) {
+    font-size: 1.2rem;
+  }
 }
 
 h3 {
@@ -21,5 +25,13 @@ h3 {
 .container {
   width: 1170px;
   padding-top: 56px;
-  margin: 0 auto;
+  display: flex;
+
+  @media (max-width: 970px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+  }
 }

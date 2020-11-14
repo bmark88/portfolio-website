@@ -9,8 +9,11 @@
     text-decoration: none;
     color: black;
     // font-size: 50px;
+    transition: font-size 0.3s;
+    white-space: nowrap;
 
     &:hover {
+      font-size: 2.5rem;
       color: darkgrey;
     }
   }
