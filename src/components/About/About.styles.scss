@@ -1,5 +1,6 @@
-.philosophies {
-
+.about {
+  margin: 0 auto;
+  
   span {
     color: #DAA520;
     text-transform: uppercase;
@@ -12,14 +13,54 @@
     list-style: none;
     font-size: 1.2rem;
   }
+}
+
+.about-header {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 33.33%;
+  padding: 0;
+
+  li {
+    text-transform: capitalize;
+    font-size: 1.5em;
+
+    &:hover {
+      border-bottom: solid 3px #DAA520;
+    }
+  }
+}
+
+.about-summary {
+  display: flex;
+  
+  p {
+    margin-left: 5rem;
+  }
+}
+
+.philosophies {
+  // span {
+  //   color: #DAA520;
+  //   text-transform: uppercase;
+  //   font-style: italic;
+  //   font-weight: bold;
+  // }
+
+  // li {
+  //   padding: 0.5rem;
+  //   list-style: none;
+  //   font-size: 1.2rem;
+  // }
 
   .possible {
     color: red;
   }
-
 }
 
 #profile-pic {
   width: 30vw;
+  min-width: 90px;
   border-radius: 20px;
 }

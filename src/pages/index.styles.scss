@@ -24,8 +24,9 @@ h3 {
 
 .container {
   width: 1170px;
+  height: 100vh;
   padding-top: 56px;
-  display: flex;
+  margin: 0 auto;
 
   @media (max-width: 970px) {
     display: flex;
@@ -33,5 +34,9 @@ h3 {
   }
 
   @media (max-width: 768px) {
+  }
+
+  @media (min-width: 1171px) {
+    width: 1700px;
   }
 }
