@@ -1,5 +1,8 @@
 .footer-content {
-  display: flex;
+
+  @media (min-width: 970px) {
+    display: flex;
+  }
 }
 
 .copyright {

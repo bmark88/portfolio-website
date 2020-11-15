@@ -7,10 +7,10 @@ import './SocialContainer.styles.scss';
 
 const SocialContainer = () => (
   <div className='social-container'>
-    <SocialContainerItem href='https://github.com/bmark88'>
+    <SocialContainerItem href='https://github.com/bmark88' title='GitHub'>
       <GitHub />
     </SocialContainerItem>
-    <SocialContainerItem href='https://www.linkedin.com/in/bradleymark/'>
+    <SocialContainerItem href='https://www.linkedin.com/in/bradleymark/' title='LinkedIn'>
       <LinkedIn />
     </SocialContainerItem>
   </div>

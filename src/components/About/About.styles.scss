@@ -1,5 +1,6 @@
 .about {
   margin: 0 auto;
+  padding-top: 56px;
   
   span {
     color: #DAA520;
@@ -15,8 +16,14 @@
   }
 }
 
-.about-content {
+.about-content { 
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 970px) {
+    flex-direction: row;
+  }
 }
 
 .about-header {
@@ -38,10 +45,6 @@
 
 .about-summary {
   display: flex;
-  
-  // p {
-  //   margin-left: 5rem;
-  // }
 }
 
 .about-philosophies {
@@ -63,6 +66,10 @@
 }
 
 #profile-pic {
-  width: 30vw;
-  border-radius: 20px;
+  width: 100vw;
+  
+  @media (min-width: 970px) {
+    width: 30vw;
+    border-radius: 20px;
+  }
 }

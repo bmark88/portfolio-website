@@ -23,21 +23,24 @@ h3 {
 }
 
 .container {
-  width: 1170px;
-  height: 100vh;
-  padding-top: 56px;
+  width: 100vw;
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+  
   margin: 0 auto;
 
-  @media (max-width: 970px) {
+  @media (min-width: 970px) {
     display: flex;
     flex-direction: column;
   }
-
-  @media (max-width: 768px) {
-    width: 100vw;
-  }
   
-  @media (min-width: 1171px) {
-    
+  @media (min-width: 1170px) {
+    width: 1170px;
   }
 }

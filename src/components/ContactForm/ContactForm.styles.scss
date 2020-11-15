@@ -1,9 +1,14 @@
 .contact-form {
   // background-color: rgb(43, 51, 128);
   // color: #FFFFFF;
-  width: 33.33vw;
-  position: relative;
-  right: 0;
   text-align: center;
-  padding: 20px;
+  padding: 1em;
+
+  @media (min-width: 970px) {
+    width: 33.33vw;
+    position: relative;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+  }
 }
