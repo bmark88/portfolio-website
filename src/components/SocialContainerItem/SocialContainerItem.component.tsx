@@ -6,9 +6,10 @@ const SocialContainerItem = (props: any) => {
   const { href, children, title } = props;
 
   return (
-    <div>
+    <div className='social-link'>
       <a href={href} target='_blank'>{children}</a>
-      Connect with me on {title}.
+      <p>Connect with me on</p>
+      <a href={href} target='_blank'>{title}.</a>
     </div>
   );
 };

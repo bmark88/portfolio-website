@@ -2,18 +2,11 @@
 
   @media (min-width: 970px) {
     display: flex;
+    align-items: flex-end;
   }
 }
 
 .copyright {
   position: relative;
   margin: 0 auto;
-}
-
-footer {
-
-  // temporary
-  div {
-    border: solid 1px;
-  }
 }

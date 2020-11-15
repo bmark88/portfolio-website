@@ -1,18 +1,23 @@
 // Carousel view styles (individualized projects instead of grid)
 .project-carousel {
 
+  a {
+    position: relative;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
   .project-item {
     width: 100vw;
-    background-color: yellow;
     display: flex;
 
     img {
       width: 100%;
-    }
-
-    a {
-      position: absolute;
-      z-index: 9999;
     }
 
     p {
@@ -23,7 +28,6 @@
       width: 100%;
       display: flex;
       padding: 2em;
-      border: solid 1px;
       margin-bottom: 50px;
         
       a {
@@ -40,8 +44,7 @@
 
       img {
         height: auto; 
-        width: 66.66%; 
-        padding-left: 2em;
+        width: 100%;
       } 
     }
   }
@@ -97,11 +100,16 @@
 
   @media (min-width: 970px) {
 
+    //.overlay and img should have exact same height and width 
+    .overlay, img {
+      height: 20rem;
+      width: 35rem;
+      margin: 0;
+    }
+
     .overlay {
-      width: 50rem;
       position: absolute;
       opacity: 70%;  
-      min-height: 20rem;
 
       span {
         display: none;
@@ -109,9 +117,5 @@
       }
     }
 
-    img {
-      width: 50rem;
-      height: 20rem;
-    }
   }
 }
