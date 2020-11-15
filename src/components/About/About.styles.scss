@@ -15,6 +15,10 @@
   }
 }
 
+.about-content {
+  display: flex;
+}
+
 .about-header {
   list-style: none;
   display: flex;
@@ -35,32 +39,30 @@
 .about-summary {
   display: flex;
   
-  p {
-    margin-left: 5rem;
-  }
+  // p {
+  //   margin-left: 5rem;
+  // }
 }
 
-.philosophies {
-  // span {
-  //   color: #DAA520;
-  //   text-transform: uppercase;
-  //   font-style: italic;
-  //   font-weight: bold;
-  // }
-
-  // li {
-  //   padding: 0.5rem;
-  //   list-style: none;
-  //   font-size: 1.2rem;
-  // }
-
+.about-philosophies {
+  
   .possible {
     color: red;
   }
 }
 
+.summary-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  p {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+  }
+}
+
 #profile-pic {
   width: 30vw;
-  min-width: 90px;
   border-radius: 20px;
 }

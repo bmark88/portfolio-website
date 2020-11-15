@@ -3,7 +3,7 @@ import profilePic from '../../assets/images/ProfilePic.png';
 
 import './About.styles.scss';
 
-const About = (props: any) => {
+const About = () => {
   const [aboutSection, setAboutSection] = useState({
     currentAboutSection: 'summary'
   });
@@ -17,8 +17,8 @@ const About = (props: any) => {
           <aside><h2>About</h2></aside>
           <ul className='about-header'>
             {
-              aboutHeaderSubheadings.map(item => 
-                <li onClick={() => {
+              aboutHeaderSubheadings.map((item, index) => 
+                <li key={index} onClick={() => {
                   setAboutSection({ ...aboutSection, currentAboutSection: item})
                 }}>
                   {item}
@@ -26,18 +26,29 @@ const About = (props: any) => {
               )
             }
           </ul>
+          <section className='about-content'>
+          <div>
+            <img id='profile-pic' src={profilePic} />
+          </div>
           {
             aboutSection.currentAboutSection === 'summary' &&
             <section className='about-summary'>
-              <div>
+              {/* <div>
                 <img id='profile-pic' src={profilePic} />
+              </div> */}
+              <div className={'summary-content'}>
+                <p>
+                  Calvin, why do you keep calling me Calvin? Well, Marty, I'm almost eighteen-years-old, it's not like I've never parked before. Hey Dad, George, hey, you on the bike. Uh, no, no, no, no. What are you looking at, butt-head? Just turn around, McFly, and walk away. Are you deaf, McFly? Close the door and beat it.
+                </p>
+                <p>
+                  Oh yes sir. Yeah, well uh, lets keep this brain melting stuff to ourselves, okay? What's that thing he's on? Marty, don't go this way. Strickland's looking for you. If you're caught it'll be four tardies in a row. Our first television set, Dad just picked it up today. Do you have a television?
+                </p>
               </div>
-              <p>I am a paragraph</p>
             </section>
           }
           {
             aboutSection.currentAboutSection === 'talents' &&
-            <section>
+            <section className='about-talents'>
               <ul>
                 <li>
                   <span>Coding</span>
@@ -48,7 +59,7 @@ const About = (props: any) => {
           {
             aboutSection.currentAboutSection === 'philosophies' &&
             <section>
-              <ul className='philosophies'>
+              <ul className='about-philosophies'>
                 <li>
                   <span>Kaizen</span> - Continuous Learning
                 </li>
@@ -64,6 +75,7 @@ const About = (props: any) => {
               </ul>
             </section>
           }
+          </section>
         </div>
       </div>
     </section>

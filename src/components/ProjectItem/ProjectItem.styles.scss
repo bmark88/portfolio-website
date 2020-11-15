@@ -1,55 +1,97 @@
-.project-item {
-  width: 100%;
-  display: flex;
-  padding: 2em;
-  border: solid 1px;
-  margin-bottom: 50px;
+// Carousel view styles (individualized projects instead of grid)
+.project-carousel {
+
+  .project-item {
+    width: 100%;
+    display: flex;
+    padding: 2em;
+    border: solid 1px;
+    margin-bottom: 50px;
+      
+    a {
+      text-decoration: none;
+      color: black;
+      // font-size: 50px;
+      transition: font-size 0.3s;
+      white-space: nowrap;
+
+      &:hover {
+        font-size: 2.5rem;
+        color: darkgrey;
+      }
+    }
+
+    img {
+      height: auto; 
+      width: 66.66%; 
+      padding-left: 2em;
+    } 
+  }
+
+  .display-right {
+    flex-direction: row;
+
+    // &:hover {
+    //   border-left: solid 15px #140a4e;
+    // }
+  }
+
+  .display-left {
+    flex-direction: row-reverse;
+
+    // &:hover {
+    //   border-left: solid 15px #140a4e;
+    // }
+  }
+
+  .display-left, .display-right {
     
-  a {
-    text-decoration: none;
-    color: black;
-    // font-size: 50px;
-    transition: font-size 0.3s;
-    white-space: nowrap;
+    &:hover {
+      border-left: solid 15px goldenrod;
+    }
+  }
+
+  .project-information-container {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+  }
+}
+
+// Grid view styles 
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  .overlay {
+    width: 50rem;
+    position: absolute;
+    opacity: 70%;  
+    overflow: hidden;
+    min-height: 20rem;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
-      font-size: 2.5rem;
-      color: darkgrey;
+      background-color: #000000;
+    }
+
+    span {
+      color: white;
+      font-size: 3rem;
+      // display: none;
+
+      &:hover {
+        display: block;
+        color: red;
+      }
     }
   }
 
   img {
-    height: auto; 
-    width: 66.66%; 
-    padding-left: 2em;
-  } 
-}
-
-.display-right {
-  flex-direction: row;
-
-  // &:hover {
-  //   border-left: solid 15px #140a4e;
-  // }
-}
-
-.display-left {
-  flex-direction: row-reverse;
-
-  // &:hover {
-  //   border-left: solid 15px #140a4e;
-  // }
-}
-
-.display-left, .display-right {
-  
-  &:hover {
-    border-left: solid 15px goldenrod;
+    width: 50rem;
+    height: 20rem;
   }
-}
-
-.project-information-container {
-  display: flex;
-  flex-direction: column;
-  width: 33.33%;
 }

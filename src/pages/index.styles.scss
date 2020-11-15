@@ -34,9 +34,10 @@ h3 {
   }
 
   @media (max-width: 768px) {
+    width: 100vw;
   }
-
+  
   @media (min-width: 1171px) {
-    width: 1700px;
+    
   }
 }
