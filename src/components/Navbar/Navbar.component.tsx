@@ -4,11 +4,22 @@ import NavbarListItem from '../NavbarListItem/NavbarListItem.component';
 
 import './Navbar.styles.scss';
 
+const navItems = [
+  {href: 'projects', pageName: 'Projects'},
+  {href: 'about', pageName: 'About'},
+  {href: 'contact', pageName: 'Contact'}
+];
+
 const Navbar = () => (
   <nav className='nav-container'>
-    <NavbarListItem href='projects' pageName='Projects' />
-    <NavbarListItem href='about' pageName='About' />
-    <NavbarListItem href='contact' pageName='Contact' />
+  <ul className='nav-items hover-underline'>
+      {navItems.map(item => 
+        <NavbarListItem 
+          href={item.href} 
+          pageName={item.pageName} 
+        />
+      )}
+    </ul>
   </nav>
 );
 

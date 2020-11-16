@@ -22,6 +22,18 @@ h3 {
   }
 }
 
+.hover-underline {
+
+  li {
+    white-space: nowrap;
+    
+    &:hover {
+      border-bottom: solid 3px #DAA520;
+      line-height: 1;
+    }
+  }
+}
+
 .container {
   padding-top: 56px;
   width: 100vw;

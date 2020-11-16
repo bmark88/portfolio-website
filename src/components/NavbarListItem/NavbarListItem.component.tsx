@@ -6,11 +6,11 @@ const NavbarListItem = (props: any) => {
   const { href, pageName } = props;
 
   return (
-    <div>
+    <li>
       <a href={`#${href}`} className='navbar-list-item'>
         {pageName}
       </a>
-    </div>
+    </li>
   );
 };
 

@@ -1,12 +1,15 @@
+.nav-items {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: space-evenly;
+  min-width: 300px;
+}
+
 .navbar-list-item {
   font-size: 20px;
-  width: 1em;
-  margin: 15px;
+  width: 1rem;
   text-decoration: none;
   font-weight: bolder;
   color: #FFFFFF;
-
-  &:hover {
-    border-bottom: solid 3px #DAA520;
-  }
 }

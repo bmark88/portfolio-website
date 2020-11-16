@@ -26,7 +26,7 @@ const Projects = () => {
   return (
     <section id='projects'>
       <h2>Projects</h2>
-      <ul className='projects-items'>
+      <ul className='projects-items hover-underline'>
         <ToggleItem 
           items={['grid', 'carousel']} 
           setProjects={setProjects} 
