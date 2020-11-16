@@ -21,8 +21,8 @@ const About = () => {
             <div className='about-summary'>
               <div className={'summary-content'}>
                 <p>
-                  I'm a Full Stack Software Developer who loves to build things that solves 
-                  <span className='emphasize-text'>real world problems.</span> Writing code is the road to my destination called automation.
+                  I'm a Full Stack Software Developer who loves to build things that solves
+                  <span className='emphasize-text'> real world problems.</span> Writing code is the road to my destination called automation.
                 </p>
                 <p>
                   Prior to this I was involved in consultative selling of B2B SaaS solutions, which led to increased exposure to various software. This allowed me to stumble across my passion for technology.

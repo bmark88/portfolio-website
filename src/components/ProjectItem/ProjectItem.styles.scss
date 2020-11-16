@@ -57,7 +57,8 @@
   //.overlay and img should have exact same height and width 
   .overlay, img {
     width: 100%;
-    height: 28.3rem;
+    // height: 28.3rem;
+    object-fit: cover;
   }
 
   .overlay {
@@ -73,6 +74,7 @@
       margin: 0 auto;
       display: flex;
       align-self: center;
+      display: none;
     }
 
     &:hover {
@@ -106,3 +108,13 @@
 
   }
 }
+
+// border-radius: 50%;
+// object-fit: cover;
+// width: 12rem;
+// height: 12rem;
+
+// @media (min-width: 970px) {
+//   width: 25rem;
+//   height: 25rem;
+// }

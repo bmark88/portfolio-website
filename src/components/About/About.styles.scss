@@ -1,7 +1,6 @@
 .about {
   margin: 0 auto;
-  padding-top: 9rem;
-  height: 90vh;
+  padding-top: 7rem;
   width: 100%;
 
   h2 {
@@ -20,13 +19,20 @@
     list-style: none;
     font-size: 1.2rem;
   }
+
+  @media (max-width: 600px) {
+    padding-top: 3rem;
+  }
 }
 
 .about-content { 
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 50vh;
+
+  @media (max-width: 600px) {
+
+  }
 
   @media (min-width: 970px) {
     flex-direction: row;
@@ -46,10 +52,6 @@
   }
 }
 
-// .about-summary {
-//   display: flex;
-// }
-
 .about-core-values {
   
   .emphasize-text {
@@ -58,17 +60,15 @@
 }
 
 .summary-content {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
   padding: 2rem;
   
   p {
     font-size: 1.5rem;
     line-height: 2.2rem;
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
 
     @media (min-width: 970px) {
+      padding: 1rem 2rem;
       font-size: 1.4rem;
     }
   }
@@ -81,8 +81,9 @@
 #profile-pic {
   border-radius: 50%;
   object-fit: cover;
-  width: 40vw;
-  height: 40vw;
+  width: 12rem;
+  height: 12rem;
+  margin-top: 2rem;
   
   @media (min-width: 970px) {
     width: 25rem;
