@@ -8,9 +8,17 @@
 
 .copyright {
   position: relative;
-  margin: 0 auto;
+  color: #FFFFFF;
+  padding: 0.5rem;
 }
 
 footer {
   background-color: #183059;
+
+  li {
+    color: red;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    list-style: none;
+  }
 }

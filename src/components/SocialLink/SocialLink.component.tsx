@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './SocialContainerItem.styles.scss';
+import './SocialLink.styles.scss';
 
-const SocialContainerItem = (props: any) => {
+const SocialLink = (props: any) => {
   const { href, children, title } = props;
 
   return (
@@ -14,4 +14,4 @@ const SocialContainerItem = (props: any) => {
   );
 };
 
-export default SocialContainerItem;
+export default SocialLink;

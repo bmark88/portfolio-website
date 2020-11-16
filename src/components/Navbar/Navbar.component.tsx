@@ -5,8 +5,8 @@ import NavbarListItem from '../NavbarListItem/NavbarListItem.component';
 import './Navbar.styles.scss';
 
 const navItems = [
-  {href: 'projects', pageName: 'Projects'},
   {href: 'about', pageName: 'About'},
+  {href: 'projects', pageName: 'Projects'},
   {href: 'contact', pageName: 'Contact'}
 ];
 

@@ -1,6 +1,10 @@
 .contact-form {
   text-align: center;
   padding: 1em;
+  
+  label, input, h3 {
+    color: #FFFFFF;
+  }
 
   @media (min-width: 970px) {
     width: 33.33vw;
@@ -9,4 +13,59 @@
     text-align: center;
     padding: 20px;
   }
+}
+
+
+// MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled Mui-required Mui-required
+
+// .MuiInputLabel-filled
+// .Mui-focused
+// .Mui-required
+
+
+.MuiFormLabel-root {
+  color: white;
+}
+.MuiInputLabel-root {
+  color: white;
+}
+.MuiInputLabel-formControl {
+  color: white;
+}
+.MuiInputLabel-animated {
+  color: white;
+}
+.MuiInputLabel-shrink {
+  color: white;
+}
+.MuiFormLabel-filled {
+  color: white;
+}
+.Mui-required {
+  color: white;
+}
+.Mui-required{
+  color: white;
+}
+
+.Mui-focused{
+  color: white;
+}
+
+
+
+.MuiInputBase-root  {
+  color: white;
+}
+.MuiInput-root  {
+  color: white;
+}
+.MuiInput-underline:hover  {
+  // border-bottom: 2px solid red;
+}
+.MuiInputBase-formControl  {
+  color: white;
+}
+.MuiInput-formControl {
+  color: white;
 }

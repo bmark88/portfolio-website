@@ -52,6 +52,7 @@
 
 // Grid view styles 
 .project-grid {
+  margin: 2rem 0;
 
   //.overlay and img should have exact same height and width 
   .overlay, img {
@@ -75,6 +76,7 @@
     }
 
     &:hover {
+      transition: all 700ms;
       background-color: #000000;
 
       span {
@@ -90,7 +92,6 @@
     .overlay, img {
       height: 20rem;
       width: 35rem;
-      margin: 0;
     }
 
     .overlay {
