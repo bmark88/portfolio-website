@@ -28,7 +28,6 @@
       width: 100%;
       display: flex;
       padding: 2em;
-      margin-bottom: 50px;
         
       a {
         text-decoration: none;
@@ -48,35 +47,21 @@
       } 
     }
   }
-
-  .display-right {
-    flex-direction: row;
-  }
-
-  .display-left {
-    flex-direction: row-reverse;
-  }
-
-  .project-information-container {
-    display: flex;
-    flex-direction: column;
-    width: 33.33%;
-  }
 }
 
 // Grid view styles 
 .project-grid {
-  img {
+
+  //.overlay and img should have exact same height and width 
+  .overlay, img {
     width: 100%;
-    margin-bottom: 1em;
+    height: 28.3rem;
   }
 
   .overlay {
     z-index: 2;
     position: absolute;
-    width: 100%;
     opacity: 70%;
-    height: 200px;
     display: flex;
     flex-wrap: wrap;
     

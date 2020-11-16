@@ -1,64 +1,72 @@
 import React, { useState } from 'react';
 
 import ProjectItem from '../ProjectItem/ProjectItem.component';
+import ToggleItem from '../ToggleItem/ToggleItem.component';
 import projectList from './projectListData';
 
 import './Projects.styles.scss';
 
+const updateCarouselProject = (state: any, setState: any) => {
+  // Reset carousel to first item in projectList array
+  if (state.id >= projectList.length - 1) {
+    setState({...state, id: 0})
+  } else {
+    setState({...state, id: state.id + 1})
+  }
+};
+
 const Projects = () => {
   const [projects, setProjects] = useState({
-    id: 0,
-    projectView: 'carousel'
+    id: 0, // used for carousel to display a particular project
+    projectView: 'grid' // used to toggle views between grid and carousel
   });
+
+  const { projectView, id } = projects;
 
   return (
     <section id='projects'>
-      <div className='container'>
-        <h2>Projects</h2>
-          <ul className='projects'>
-            <li onClick={() => setProjects({...projects, projectView: 'carousel'})}>
-              Individual
-            </li>
-            <li onClick={() => setProjects({...projects, projectView: 'grid'})}>
-              Grid
-            </li>
-          </ul>
-          <button onClick={() => {
-            // Reset carousel to first item in projectList array
-            if (projects.id >= projectList.length - 1) {
-              setProjects({...projects, id: 0})
-            } else {
-              setProjects({...projects, id: projects.id + 1})
-            }
-          }}>Next</button>
-        {
-          projects.projectView === 'carousel' &&
+      <h2>Projects</h2>
+      <ul className='projects-items'>
+        <ToggleItem 
+          items={['grid', 'carousel']} 
+          setProjects={setProjects} 
+          type='projects' 
+        />
+      </ul>
+      {
+        projectView === 'carousel' &&
+        <>
+          <button onClick={() => 
+            updateCarouselProject(projects, setProjects)}
+          >
+            Next
+          </button>
           <div className='project-carousel'>
             {projectList.map(project => 
-              project.id === projects.id &&
+              project.id === id &&
               <ProjectItem 
                 key={project.id} 
-                viewType={projects.projectView} 
+                viewType={projectView} 
                 {...project} 
               />
             )}
           </div>
-        }
-        {
-          projects.projectView === 'grid' &&
-          <div className='project-grid'>
-            {projectList.map(project => 
-              <ProjectItem 
-                key={project.id} 
-                viewType={projects.projectView} 
-                {...project} 
-              />
-            )}
-          </div>
-        }
-      </div>
+        </>
+      }
+      {
+        projectView === 'grid' &&
+        <div className='project-grid'>
+          {projectList.map(project => 
+            <ProjectItem 
+              key={project.id} 
+              viewType={projectView} 
+              {...project} 
+            />
+          )}
+        </div>
+      }
     </section>
   );
-}
+};
 
 export default Projects;

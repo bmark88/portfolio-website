@@ -2,4 +2,37 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#projects {
+  padding-top: 56px;
+  text-align: center;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.projects-items {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+
+  li {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin: 0 1.4rem;
+    padding-top: 1.4rem;
+
+    &:hover {
+      border-bottom: solid 3px #DAA520;
+    }
+  }
+}
+
+#projects {
+  position: relative;
 }

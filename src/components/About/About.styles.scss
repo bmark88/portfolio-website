@@ -1,5 +1,7 @@
 .about {
   margin: 0 auto;
+  height: 100vh;
+  width: 100%;
   
   span {
     color: #DAA520;
@@ -57,18 +59,27 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 2rem;
   
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
     padding: 1rem 2rem;
+
+    @media (min-width: 970px) {
+      font-size: 2rem;
+    }
   }
 }
 
 #profile-pic {
-  width: 100vw;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 40vw;
+  height: 40vw;
   
   @media (min-width: 970px) {
-    width: 30vw;
-    border-radius: 20px;
+    width: 25rem;
+    height: 25rem;
   }
 }
