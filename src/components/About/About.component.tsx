@@ -28,21 +28,25 @@ const About = () => {
                   Prior to this I was involved in consultative selling of B2B SaaS solutions, which led to increased exposure to various software. This allowed me to stumble across my passion for technology.
                 </p>
                 <div className='summary-rules'>
-                  <div>
-                    <p>In sales, I lived by this rule:</p>
-                    <ul>
-                      <li><span>A</span>lways</li>
-                      <li><span>B</span>e</li>
-                      <li><span>C</span>losing</li>
-                    </ul>
+                  <div className='rule-container'>
+                    <h3>In sales, I lived by this rule:</h3>
+                    <div>
+                      <ul>
+                        <li><span>A</span>lways</li>
+                        <li><span>B</span>e</li>
+                        <li><span>C</span>losing</li>
+                      </ul>
+                    </div>
                   </div>
-                  <div>
-                    <p>Now, I live by this rule:</p>
-                    <ul>
-                      <li><span>A</span>lways</li>
-                      <li><span>B</span>e</li>
-                      <li><span>C</span>oding</li>
-                    </ul>
+                  <div className='rule-container'>
+                    <h3>Now, I live by this rule:</h3>
+                    <div>
+                      <ul>
+                        <li><span>A</span>lways</li>
+                        <li><span>B</span>e</li>
+                        <li><span>C</span>oding</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -2,16 +2,21 @@
   box-sizing: border-box;
 }
 
-body, p, h2, ul {
+body, p, ul, h2 {
   margin: 0;
+  padding: 0;
   font-family: 'Paytone One', sans-serif;
 }
 
 h2 {
-  font-size: 6.5rem;
+  font-size: 4.5rem;
 
-  @media (max-width: 1170px) {
+  @media (max-width: 600px) {
     font-size: 2.4rem;
+  }
+
+  @media (min-width: 970px) {
+    font-size: 5.5rem;
   }
 }
 
@@ -47,7 +52,7 @@ h3 {
 
   @media (min-width: 970px) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   
   @media (min-width: 1170px) {
