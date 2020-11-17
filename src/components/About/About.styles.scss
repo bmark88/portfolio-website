@@ -43,15 +43,8 @@
   }
 }
 
-.about-core-values {
-  
-  .emphasize-text {
-    color: red;
-  }
-}
-
 .summary-content {
-  padding: 2rem;
+  padding: 2rem 0;
 
   h3, p {
     text-align: center;
@@ -60,7 +53,7 @@
   p {
     font-size: 1.5rem;
     line-height: 2.2rem;
-    padding: 1rem 0rem;
+    padding: 1rem;
 
     @media (min-width: 970px) {
       padding: 1rem 2rem;

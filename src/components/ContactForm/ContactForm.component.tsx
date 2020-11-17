@@ -18,6 +18,7 @@ const ContactForm = () => (
   <section id='contact'>
     <div className='contact-form'>
       <h3>Contact Me</h3>
+      <div className='form-content'>
       <FormControl>
         <TextField label='Your Name' required />
         <TextField label='Your Phone Number' required />
@@ -29,8 +30,9 @@ const ContactForm = () => (
           label='Message' 
           style={styles.additionalInfo} 
         />
-        <Button variant='contained'>Submit Contact Information</Button>
+        <Button variant='contained'>Send Message</Button>
       </FormControl>
+      </div>
     </div>
   </section>
 );

@@ -1,22 +1,23 @@
 .footer-content {
 
-  @media (min-width: 970px) {
-    display: flex;
+  @media (min-width: 750px) {
     align-items: flex-end;
   }
 }
 
 .copyright {
   position: relative;
-  color: #FFFFFF;
   padding: 0.5rem;
 }
 
 footer {
   background-color: #183059;
+  
+  p {
+    color: #FFFFFF;
+  }
 
   li {
-    color: red;
     font-size: 1.4rem;
     line-height: 2rem;
     list-style: none;

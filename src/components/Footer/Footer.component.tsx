@@ -12,7 +12,7 @@ const Footer = () => {
   <>
     <footer>
       <div className='footer-content'>
-        <div>
+        {/* <div>
           <ul className='about-core-values'>
             <li>
               <span>Kaizen</span> - Continuous Learning
@@ -37,9 +37,11 @@ const Footer = () => {
             <li>Trying new things</li>
             <li></li>
           </ul>
+        </div> */}
+        <div className='test'>
+          <SocialContainer />
+          <ContactForm />
         </div>
-        <SocialContainer />
-        <ContactForm />
       </div>
       <p className='copyright'>
         Copyright &#169; {currentDate.getFullYear()} Bradley Mark - All rights reserved.

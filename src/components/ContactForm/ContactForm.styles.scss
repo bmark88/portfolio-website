@@ -1,13 +1,28 @@
+#contact {
+  width: 100%;
+
+  .form-content {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .MuiFormControl-root {
+    width: 100%;
+  }
+}
+
 .contact-form {
   text-align: center;
   padding: 1em;
+  font-size: 2rem;
   
   label, input, h3 {
     color: #FFFFFF;
   }
 
   @media (min-width: 970px) {
-    width: 33.33vw;
+    // width: 33.33vw;
     position: relative;
     right: 0;
     text-align: center;
