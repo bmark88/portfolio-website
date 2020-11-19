@@ -12,6 +12,10 @@
     width: 100%;
   }
 
+  .MuiInputBase-root {
+    color: #FFFFFF;
+  }
+
   @media (min-width: 750px) {
     width: 80%;
   }
@@ -28,6 +32,28 @@
   
   label, input, h3 {
     color: #FFFFFF;
+    margin: 0.5rem 0;
+  }
+
+  .MuiInput-underline {
+  
+    &:before, &:after {
+      border-bottom: 1px solid #FFFFFF;
+    }
+  }
+  
+  .MuiFormLabel-root.Mui-focused {
+    color: #FFFFFF;
+    outline: none;
+  }
+
+  .MuiButtonBase-root {
+    background-color: #FFFFFF;
+    
+    @media (min-width: 750px) {
+      width: 50%;
+      margin: 0 auto;
+    }
   }
 
   @media (min-width: 970px) {
