@@ -6,16 +6,11 @@
 }
 
 #projects {
-  padding-top: 56px;
   text-align: center;
 
   ul {
     list-style: none;
     padding: 0;
-  }
-
-  @media (min-width: 900px) {
-    padding-top: 3.5rem;
   }
 }
 

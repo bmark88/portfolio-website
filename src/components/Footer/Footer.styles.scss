@@ -1,17 +1,11 @@
-.footer-content {
-
-  @media (min-width: 750px) {
-    align-items: flex-end;
-  }
-}
-
-.copyright {
+.copyright { // fix
   position: relative;
   padding: 0.5rem;
 }
 
 footer {
   background-color: #183059;
+  margin-top: 7rem;
   
   p {
     color: #FFFFFF;
@@ -21,5 +15,12 @@ footer {
     font-size: 1.4rem;
     line-height: 2rem;
     list-style: none;
+  }
+}
+
+.contact-form {
+
+  .MuiInput-underline:before {
+    border-bottom: 1px solid #FFFFFF;
   }
 }

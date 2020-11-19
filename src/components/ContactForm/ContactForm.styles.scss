@@ -1,5 +1,6 @@
 #contact {
   width: 100%;
+  margin: 0 auto;
 
   .form-content {
     width: 80%;
@@ -9,6 +10,14 @@
 
   .MuiFormControl-root {
     width: 100%;
+  }
+
+  @media (min-width: 750px) {
+    width: 80%;
+  }
+
+  @media (min-width: 970px) {
+    width: 50%;
   }
 }
 
@@ -22,7 +31,6 @@
   }
 
   @media (min-width: 970px) {
-    // width: 33.33vw;
     position: relative;
     right: 0;
     text-align: center;

@@ -14,7 +14,8 @@ const Navbar = () => (
   <nav className='nav-container'>
   <ul className='nav-items hover-underline'>
       {navItems.map(item => 
-        <NavbarListItem 
+        <NavbarListItem
+          key={item.pageName}
           href={item.href} 
           pageName={item.pageName} 
         />
