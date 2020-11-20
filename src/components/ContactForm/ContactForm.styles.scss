@@ -1,5 +1,5 @@
 #contact {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 
   .form-content {
@@ -10,10 +10,6 @@
 
   .MuiFormControl-root {
     width: 100%;
-  }
-
-  .MuiInputBase-root {
-    color: #FFFFFF;
   }
 
   @media (min-width: 750px) {
@@ -27,32 +23,66 @@
 
 .contact-form {
   text-align: center;
-  padding: 1em;
-  font-size: 2rem;
+  background-color: #F9F9FB;
+  border-radius: 12px;
+  margin: 2.5rem 0;
   
   label, input, h3 {
-    color: #FFFFFF;
     margin: 0.5rem 0;
+  }
+
+  h3  {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .MuiFilledInput-input {
+    margin-top: 1rem;
   }
 
   .MuiInput-underline {
   
-    &:before, &:after {
-      border-bottom: 1px solid #FFFFFF;
+    &:after {
+      border-bottom: 1px solid;
     }
   }
-  
+
+  .MuiFilledInput-underline {
+
+    &:hover:before, &:before, &:after {
+      border-bottom: none;
+    }
+  }
+
   .MuiFormLabel-root.Mui-focused {
-    color: #FFFFFF;
+    color: #000000;
     outline: none;
   }
 
+  .MuiFilledInput-root {
+    background-color: #F0F0F0;
+  }
+
   .MuiButtonBase-root {
-    background-color: #FFFFFF;
+    font-size: 1.2rem;
+    background-color: #0C75FF;
+    color: #FFFFFF;
+    margin: 1rem auto;
+    padding: 1.2rem;
+    border-radius: 12px;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: #161786;
+      transition: background-color 400ms;
+    }
     
     @media (min-width: 750px) {
       width: 50%;
-      margin: 0 auto;
     }
   }
 

@@ -9,17 +9,15 @@ const Footer = () => {
   const currentDate = new Date(Date.now());
 
   return (
-  <>
     <footer>
-      <div className='footer-content'>
-        <SocialContainer />
         <ContactForm />
-      </div>
-      <p className='copyright'>
-        Copyright &#169; {currentDate.getFullYear()} Bradley Mark - All rights reserved.
-      </p>
+        <div className='footer-links'>
+          <p className='copyright'>
+            Copyright &#169; {currentDate.getFullYear()} Bradley Mark - All rights reserved.
+          </p>
+          <SocialContainer />
+        </div>
     </footer>
-  </>
 )};
 
 export default Footer;

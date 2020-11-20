@@ -1,19 +1,31 @@
-.copyright { // fix
+.copyright {
   position: relative;
   padding: 0.5rem;
+  color: #FFFFFF;
 }
 
 footer {
-  background-color: #183059;
+  background-color: #02044A;
   margin-top: 7rem;
-  
-  p {
-    color: #FFFFFF;
-  }
+  padding-top: 3rem;
 
   li {
     font-size: 1.4rem;
     line-height: 2rem;
     list-style: none;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 1rem;
+  width: 80%;
+  margin: 0 auto;
+
+  @media (min-width: 970px) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

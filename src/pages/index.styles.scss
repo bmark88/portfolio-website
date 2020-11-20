@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Roboto:wght@500&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -6,14 +8,14 @@ body, p, ul, h2 {
   margin: 0;
   padding: 0;
   color: #0D2340;
-  font-family: 'Paytone One', sans-serif;
+  font-family: 'Paytone One','Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-size: 2rem;
 
-  @media (max-width: 600px) {
-    font-size: 2.4rem;
+  @media (min-width: 750px) {
+    font-size: 3.5rem;
   }
 
   @media (min-width: 970px) {
@@ -41,7 +43,6 @@ h3 {
 }
 
 .container {
-  // margin-top: 56px;
   width: 100vw;
   margin: 0 auto;
 

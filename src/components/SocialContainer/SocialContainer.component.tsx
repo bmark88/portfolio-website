@@ -6,7 +6,7 @@ import { GitHub, LinkedIn } from '@material-ui/icons';
 import './SocialContainer.styles.scss';
 
 const SocialContainer = () => (
-  <div className='social-container'>
+  <>
     {/* <div>
       <div>
         <ul>
@@ -36,19 +36,21 @@ const SocialContainer = () => (
       </div>
     </div>
      */}
-    <SocialLink 
-      href='https://github.com/bmark88' 
-      title='GitHub'
-    >
-      <GitHub />
+    <SocialLink>
+      <a 
+        href='https://github.com/bmark88' 
+        target='_blank'
+      >
+        <GitHub />
+      </a>
+      <a 
+        href={'https://www.linkedin.com/in/bradleymark/'} 
+        target='_blank'
+      >
+        <LinkedIn />
+      </a>
     </SocialLink>
-    <SocialLink 
-      href='https://www.linkedin.com/in/bradleymark/' 
-      title='LinkedIn'
-    >
-      <LinkedIn />
-    </SocialLink>
-  </div>
+  </>
 );
 
 export default SocialContainer;

@@ -1,18 +1,21 @@
-.social-container {
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .social-link {
   display: flex;
   align-items: center;
   padding: 0 10px;
   justify-content: center;
+  white-space: nowrap;
   
   a, p {
     color: #FFFFFF;
-    margin: 0 2px;
+    margin: 0 5px;
+    font-size: 1.2rem;
+  }
+
+  .MuiSvgIcon-root {
+    font-size: 2rem;
+
+    &:hover {
+      color: #B0B0B0;
+    }
   }
 }

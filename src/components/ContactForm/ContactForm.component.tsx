@@ -28,9 +28,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     const messageContent = `Hi Bradley, %0d%0a 
-      
     %0d%0a ${message} %0d%0a %0d%0a 
-
 Please contact me at: %0d%0a %0d%0a 
 Email: ${email}
 %0d%0a or %0d%0a 
@@ -40,9 +38,9 @@ Phone: ${phoneNumber}
     const subjectContent = `
       ${name} | Requesting More Information
     `;
-  
-    window.open(`mailto:bradley.mark@hotmail.com?subject=${subjectContent}&body=${messageContent}`);
 
+    window.open(`mailto:bradley.mark@hotmail.com?subject=${subjectContent}&body=${messageContent}`);
+    
     setFormInfo({
       ...formInfo, 
       name: '', 
@@ -61,11 +59,12 @@ Phone: ${phoneNumber}
   return (
     <section id='contact'>
       <div className='contact-form'>
-        <h3>Contact Me</h3>
+        <h3>Interested to Chat?</h3>
+        <p>Fill in the form below</p>
         <div className='form-content'>
-        <FormControl>
+        <FormControl required>
           <TextField 
-            label='Your Name' 
+            label='Your Name'
             required 
             onChange={handleChange}
             value={name}
@@ -80,14 +79,14 @@ Phone: ${phoneNumber}
           />
           <TextField 
             label='Your Email' 
-            required 
+            required={true}
             onChange={handleChange}
             value={email}
             id='email'
           />
           <TextField 
             multiline={true} 
-            variant='outlined' 
+            variant='filled' 
             rows={5} 
             label='Message'
             style={styles.additionalInfo} 
