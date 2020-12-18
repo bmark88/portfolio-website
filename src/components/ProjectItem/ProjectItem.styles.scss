@@ -62,7 +62,6 @@
   .overlay {
     z-index: 2;
     position: absolute;
-    opacity: 70%;
     display: flex;
     flex-wrap: wrap;
     
@@ -78,6 +77,7 @@
     &:hover {
       transition: all 700ms;
       background-color: #000000;
+      opacity: 0.7;
 
       span {
         color: #FFFFFF;
@@ -96,7 +96,6 @@
 
     .overlay {
       position: absolute;
-      opacity: 70%;  
 
       span {
         display: none;
