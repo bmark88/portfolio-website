@@ -1,16 +1,9 @@
-import React, { useState } from 'react';
-import profilePic from '../../assets/images/ProfilePic.png';
+import React from 'react';
+import profilePic from '../../assets/images/ProfilePic.jpg';
 
-import ToggleItem from '../ToggleItem/ToggleItem.component';
 import './About.styles.scss';
 
 const About = () => {
-  const [aboutSection, setAboutSection] = useState({
-    currentAboutSection: 'summary'
-  });
-  
-  const aboutHeaderSubheadings = ['summary', 'core values', 'hobbies'];
-
   return (
     <section id='about'>
       <div className='container'>

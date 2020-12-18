@@ -1,9 +1,9 @@
-import reduxShop from '../../assets/images/ReduxShop.gif';
-import devCollabs from '../../assets/images/DevCollabs.gif';
-import bootcampScheduler from '../../assets/images/BootcampScheduler.gif';
-import tinyApp from '../../assets/images/TinyApp.gif';
-import swiftChat from '../../assets/images/SwiftChat.gif';
-import tweeter from '../../assets/images/Tweeter.gif';
+import reduxShop from '../../assets/images/ReduxShop.jpg';
+import devCollabs from '../../assets/images/DevCollabs.jpg';
+import bootcampScheduler from '../../assets/images/BootcampScheduler.jpg';
+import tinyApp from '../../assets/images/TinyApp.jpg';
+import swiftChat from '../../assets/images/SwiftChat.jpg';
+import tweeter from '../../assets/images/Tweeter.jpg';
 
 const projectList = [
   {
