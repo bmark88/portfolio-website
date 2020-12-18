@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FormControl, Button, TextField } from '@material-ui/core';
+
+import ErrorMessage from '../ErrorMessage/ErrorMessage.component';
+
 import './ContactForm.styles.scss';
 
 // Styles for material ui components only
@@ -19,8 +22,10 @@ const ContactForm = () => {
     name: '',
     phoneNumber: '',
     email: '',
-    message: ''
+    message: '',
+    errorMessage: ''
   });
+  const [displayError, setDisplayError] = useState(false);
 
   const { name, phoneNumber, email, message } = formInfo;
 
@@ -46,23 +51,28 @@ Phone: ${phoneNumber}
       name: '', 
       phoneNumber: '', 
       email: '', 
-      message: ''
+      message: '',
     });
+
+    setDisplayError(true);
   };
   
   const handleChange = (e: any) => {
-    if (e.target.id) {
-      setFormInfo({...formInfo, [e.target.id]: e.target.value})
-    }
+    setFormInfo({...formInfo, [e.target.id]: e.target.value})
   };  
+
+  useEffect(() => {
+    (!(name && phoneNumber && email)) ? 
+    setDisplayError(true) : setDisplayError(false)
+  }, [formInfo])
 
   return (
     <section id='contact'>
       <div className='contact-form'>
-        <h3>Interested to Chat?</h3>
+        <h3>Hire Me</h3>
         <p>Fill in the form below</p>
         <div className='form-content'>
-        <FormControl required>
+        <FormControl>
           <TextField 
             label='Your Name'
             required 
@@ -79,7 +89,7 @@ Phone: ${phoneNumber}
           />
           <TextField 
             label='Your Email' 
-            required={true}
+            required
             onChange={handleChange}
             value={email}
             id='email'
@@ -97,10 +107,12 @@ Phone: ${phoneNumber}
           <Button 
             variant='contained' 
             onClick={handleClick}
+            disabled={displayError}
           >
             Send Message
           </Button>
         </FormControl>
+        <ErrorMessage displayError={displayError} />
         </div>
       </div>
     </section>
