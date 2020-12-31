@@ -4,6 +4,8 @@ import bootcampScheduler from '../../assets/images/BootcampScheduler.jpg';
 import tinyApp from '../../assets/images/TinyApp.jpg';
 import swiftChat from '../../assets/images/SwiftChat.jpg';
 import tweeter from '../../assets/images/Tweeter.jpg';
+import cryptoMarketplace from '../../assets/images/CryptoMarketplace.jpg';
+import dockerClone from '../../assets/images/dockerClone.jpg';
 
 const projectList = [
   {
@@ -47,6 +49,20 @@ const projectList = [
     link: 'https://tweeter-board.herokuapp.com/', 
     imageUrl: tweeter,
     description: 'A single-page AJAX-based Twitter clone where users can create new tweets within the tweet board.'
+  },
+  {
+    id: 6,
+    title: 'Crypto Marketplace',
+    link: 'https://crypto-marketplace.herokuapp.com', 
+    imageUrl: cryptoMarketplace,
+    description: 'An online marketplace where users can trade their favourite crytpocurrencies.'
+  },
+  {
+    id: 7,
+    title: 'Docker Clone',
+    link: 'https://fun-with-react.herokuapp.com/docker', 
+    imageUrl: dockerClone,
+    description: "A replica of Docker's Documentation landing page with customized transitions."
   }
 ];
 
