@@ -5,7 +5,7 @@ import tinyApp from '../../assets/images/TinyApp.jpg';
 import swiftChat from '../../assets/images/SwiftChat.jpg';
 import tweeter from '../../assets/images/Tweeter.jpg';
 import cryptoMarketplace from '../../assets/images/CryptoMarketplace.jpg';
-import dockerClone from '../../assets/images/dockerClone.jpg';
+import dockerClone from '../../assets/images/DockerClone.jpg';
 
 const projectList = [
   {
