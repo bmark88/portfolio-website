@@ -11,7 +11,7 @@ const projectList = [
   {
     id: 0,
     title: 'Redux Online Shop',
-    link: 'https://redux-online-shop.herokuapp.com/',
+    link: 'https://bmark88.github.io/online-shop/',
     imageUrl: reduxShop,
     description: 'An e-commerce website using Firebase for authentication and Redux for state management. Users can check out their cart using the Stripe API.'
   },
@@ -53,14 +53,14 @@ const projectList = [
   {
     id: 6,
     title: 'Crypto Marketplace',
-    link: 'https://crypto-marketplace.herokuapp.com', 
+    link: 'https://bmark88.github.io/crypto-marketplace/', 
     imageUrl: cryptoMarketplace,
     description: 'An online marketplace where users can trade their favourite crytpocurrencies.'
   },
   {
     id: 7,
     title: 'Docker Clone',
-    link: 'https://fun-with-react.herokuapp.com/docker', 
+    link: 'https://bmark88.github.io/react-sandbox/', 
     imageUrl: dockerClone,
     description: "A replica of Docker's Documentation landing page with customized transitions."
   }
